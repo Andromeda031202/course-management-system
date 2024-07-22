@@ -1,0 +1,261 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-container,
+.signup-container,
+.addcourse-container {
+  background: linear-gradient(
+      100.75deg,
+      rgba(255, 240, 157, 0.8) -28.48%,
+      rgba(90, 196, 58, 0.363) 41.78%,
+      rgba(68, 66, 186, 0) 100%
+    ),
+    #ff6a6a;
+  width: 50%;
+  padding: 65px;
+  border-radius: 20px;
+  margin-top: 100px;
+}
+
+.signin-container h1,
+.signup-container h1,
+.addcourse-container h1 {
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+.signin-upper-container ul,
+.signup-upper-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.active-user {
+  background: linear-gradient(
+    90deg,
+    rgba(166, 249, 255, 1) 0%,
+    rgba(102, 207, 255, 1) 50%,
+    rgba(38, 165, 255, 1) 100%
+  );
+  padding: 10px;
+  border-radius: 5px;
+  color: #003366; /* Dark blue text for contrast */
+}
+
+.signin-upper-container li,
+.signup-upper-container li {
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.signin-form form,
+.signup-form form,
+.addcourse-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-form input,
+button,
+input:hover,
+.signup-form input,
+button,
+.addcourse-form input,
+button,
+select {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.signin-form button,
+.signup-form button,
+.addcourse-form button {
+  background: linear-gradient(
+      95.08deg,
+      rgba(255, 105, 180, 0.8) 1.98%,
+      /* Hot Pink */ rgba(186, 85, 211, 0.8) 100.61% /* Medium Orchid */
+    ),
+    #0ff7ff; /* Cyan base color */
+  padding: 10px;
+  width: 200px;
+  color: #ffffff; /* White text color for high contrast */
+  margin-top: 50px;
+  margin: auto;
+  cursor: pointer;
+  font-size: 20px;
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Slight rounding for better aesthetics */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.signin-form button:hover,
+.signup-form button:hover,
+.addcourse-form button:hover {
+  background: linear-gradient(
+      95.08deg,
+      rgba(255, 105, 180, 1) 1.98%,
+      /* Hot Pink */ rgba(186, 85, 211, 1) 100.61% /* Medium Orchid */
+    ),
+    #00ffff; /* Bright cyan base color on hover */
+}
+
+.signin-container span,
+.signup-container span {
+  color: #100e85;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.course-container {
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 1px solid #ddd; /* Light border */
+  font-family: Arial, sans-serif; /* Font style */
+  color: #333; /* Text color */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+}
+
+.course-container:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.violet-box {
+  background-color: #9422ff; /* Violet background color */
+  color: #ffffff; /* White text color */
+  padding: 20px; /* Padding for the box */
+  padding-right: 170px;
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 16px; /* Font size for the text */
+  margin: 10px 0; /* Margin for spacing */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.violet-box:hover {
+  background-color: #7e1fd1; /* Slightly darker violet on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.all-course-container .course-container,
+.enrolled-courses .course-container {
+  flex: 1 1 calc(33.333% - 20px); /* Responsive item sizing */
+  max-width: calc(
+    33.333% - 20px
+  ); /* Ensures items don't exceed container width */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  margin: 10px; /* Adds margin around items */
+}
+
+.all-course-container .course-container .add-course-btn,
+.enrolled-courses .course-container .add-course-btn {
+  background-color: #50ff5c; /* Green background color */
+  color: #ffffff; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for the button */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  margin-top: 10px; /* Adds margin on top for spacing */
+}
+
+.all-course-container .course-container .add-course-btn:hover,
+.enrolled-courses .course-container .add-course-btn:hover {
+  background-color: #45e552; /* Darker green on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+@media (max-width: 1200px) {
+  .all-course-container .course-container,
+  .enrolled-courses .course-container {
+    flex: 1 1 calc(50% - 20px); /* Adjusts to two columns on medium screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  .all-course-container .course-container,
+  .enrolled-courses .course-container {
+    flex: 1 1 calc(50% - 20px); /* Adjusts to two columns on medium screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .all-course-container .course-container,
+  .enrolled-courses .course-container {
+    flex: 1 1 calc(100% - 20px); /* Adjusts to single column on small screens */
+    max-width: calc(100% - 20px);
+  }
+}
+
+.all-course-container,
+.enrolled-courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between items */
+  padding: 20px; /* Adds padding around the container */
+  background-color: #f1f1f1; /* Light background color */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.enroll-btn {
+  background-color: #50ff5c; /* Green background color */
+  color: #ffffff; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for the button */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.enroll-btn:hover {
+  background-color: #45e552; /* Darker green on hover */
+}
+
+.green-box {
+  background-color: #22ff47; /* Green background color */
+  color: #ffffff; /* White text color */
+  padding: 20px; /* Padding for the box */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 16px; /* Font size for the text */
+  margin: 10px 0; /* Margin for spacing */
+}
+
+.logout-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: darkred;
+}
