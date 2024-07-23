@@ -5,6 +5,8 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Dashboard from "./components/Dashboard";
 import AddCourse from "./components/AddCourse";
+import Footer from "./components/Footer";
+import AboutUs from "./components/AboutUs";
 
 export const UserContext = createContext();
 
@@ -27,6 +29,7 @@ function App() {
       >
         <Router>
           <Routes>
+            <Route path="/Home" element={<Home />} />
             <Route path="/" element={<Dashboard />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/addcourse" element={<AddCourse />} />
