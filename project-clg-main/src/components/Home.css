@@ -1,0 +1,67 @@
+/* src/components/Home.css */
+.home-page {
+  text-align: center;
+  margin-top: 20px;
+  background-image: url("/public/19197877.jpg"); /* Adjust the path to your image */
+  background-size: contain;
+  background-position: center;
+  min-height: 100vh;
+  color: white; /* Ensure text is readable */
+}
+
+.home-header {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Semi-transparent background for readability */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.home-link {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: rgba(76, 175, 80, 0.8);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-link:hover {
+  background-color: rgba(69, 160, 73, 0.8);
+}
+
+.logout-button {
+  cursor: pointer;
+  border: none;
+  background-color: rgba(76, 175, 80, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logout-button:hover {
+  background-color: rgba(69, 160, 73, 0.8);
+}

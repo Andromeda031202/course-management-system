@@ -7,6 +7,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(/public/WhatsApp\ Image\ 2024-07-23\ at\ 12.40.27\ PM.jpeg);
+  /* min-height: 100vh; */
 }
 
 .signin-container,

@@ -7,6 +7,7 @@ import Dashboard from "./components/Dashboard";
 import AddCourse from "./components/AddCourse";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
+import Home from "./components/Home";
 
 export const UserContext = createContext();
 
@@ -34,7 +35,9 @@ function App() {
             <Route path="/signin" element={<SignIn />} />
             <Route path="/addcourse" element={<AddCourse />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/about" element={<AboutUs />} />
           </Routes>
+          <Footer />
         </Router>
       </UserContext.Provider>
     </div>
